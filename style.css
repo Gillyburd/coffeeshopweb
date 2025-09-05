@@ -1,52 +1,98 @@
+/* Establish defaults, fonts, colours etc. */
+
 body {
     margin:0;
     background-color: #1c1c1c;
     text-align: center;
     color:#ffffff;
     margin: 0;
-    /* padding:40px; */
+    padding:1px;
     font-weight: 200;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-/* select the nav container and apply properties */
-.nav-container{
-    background-color: #f5b32f;
-    /* margin-top: 50px; */
-    overflow: hidden;
-/* apply flex to get right and left navigations in a row */
-    display: flex;
-  /* push both the blocks to the edges using justify-content */
+/* Establish logo position and size (Change based on logo default size) */
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+}
+
+/* Set Lists and Anchors to correct size, colour and remove decoration */
+li, a {
+    font-weight: 500;
+    font-size: 30px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+/* Give 'header bar' section flex, spacing, alignment, padding and colour */
+header {
+    display:flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #099309;
+    }
+
+    /* remove bullet points from links */
+.links{
+    list-style: none;
 }
-/* target the ul and remove the bullets */
-.right-side, .left-side{
-    list-style-type: none;
-}
-/* change li display property from block to inline block */
-.right-side li, .left-side li{
+
+/* Keep lists within link section, inline with padding. */
+.links li {
     display: inline-block;
-}
-/* style the anchor elements */
-.right-side li a, .left-side li a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    color: #333;
-    padding: 14px 16px;
-    font-weight: bold;
-}
-/* apply hover */
-.right-side li a:hover, .left-side li a:hover{
-    background-color: #ddd;
+    padding: 0px 20px;
 }
 
+/* Gives links colour transition. */
+.links li a {
+    transition: all 0.3s ease 0s;
+}
 
+/* establishes link colour change on hover */
+.links li a:hover{
+    color: #0088a9;
+}
+
+/* Gives hero image padding to top and bottom. */
+.images{
+    padding: 50px;
+}
+
+/* What We Teach image alignments */
+.WWSImages {
+    justify-content: space-around;
+    display:flex;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.WWSImages img {
+    max-width: 500px;
+}
+
+/* What We Teach image alignments */
+.foodgallery {
+ display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.foodgallery img {
+    max-width: 500px;
+}
+
+/* Footer bar flex, spaceing, alignment and colour. */
+bottomheader {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;;
+    background-color: #099309;
+    }
        
-
-/* #navbar a {
-    text-decoration: none;
-    color: #1c1c1c;
-    /* padding: 40px; */
-/* } */
