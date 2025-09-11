@@ -13,7 +13,7 @@ body {
 #hero{
     width: 100%;
     height:1050px;
-    background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37, 29, 29, 0.44)), url('./Images/coffee_bar.jpeg');
+    background:linear-gradient(0deg, rgba(37, 29, 29, 0.66), rgba(37, 29, 29, 0.44)), url('./Images/coffee_bar.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,6 +125,15 @@ header {
     border-radius: 50px;
 }
 
+.hero-box .cta-btn{
+    background: #322c2b;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    display:inline-flex;
+}
+
 .hero-box .cta-btn:hover{
     /* background: #E4C59E; */
     background: rgba(228, 197, 158, 0.8);
@@ -153,17 +162,82 @@ header {
 
 /* What We Teach image alignments */
 .foodgallery {
- display:flex;
-    justify-content: space-evenly;
+    display:flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     /* border: 1px solid black; */
-    padding: 100px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .foodgallery img {
     max-width: 500px;
     border: #af8260 solid 5px;
 }
+
+.form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px
+}
+
+.form input, .form textarea {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;;
+}
+
+.hero-box-contact {
+    width: 50%;
+    margin-top: 2%; 
+    /* background-color: #322c2b; */
+    display: inline-block;
+    background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37, 29, 29, 0.44));
+    margin-bottom: 120px;
+}
+
+.hero-box-times {
+    width: 45%;
+    margin-top: 50px; 
+    /* background-color: #322c2b; */
+    display: inline-block;
+    background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37, 29, 29, 0.44));
+}
+
+.hero-box-times{
+    margin-bottom:200px;
+}
+
+.hero-box-times .timetable{
+    margin: 60px 60px 10px 70px;
+    color: #ffffff;
+}
+
+
+/* Specific styling and sizing for the header text within the hero box on the contacts page. */
+.hero-box-contact .hero-heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: center;
+}
+
+/* Specific styling and sizing of primary body text  on the contacts page*/
+.hero-box-contact .hero-desc {
+    font-size: 19px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 0 30px 0;
+}
+
 
 /* Footer bar flex, spaceing, alignment and colour. */
 footer {
@@ -244,8 +318,33 @@ footer {
         }
 
         header a{
-            font-size: 20px;
+            font-size: 15px;
         }
+
+
+.hero-box-contact {
+    width: 50%;
+    margin-top: 2%; 
+    margin-bottom: 120px;
+    
+}
+/* Specific styling and sizing for the header text within the hero box on the contacts page. */
+.hero-box-contact .hero-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: center;
+}
+
+/* Specific styling and sizing of primary body text  on the contacts page*/
+.hero-box-contact .hero-desc {
+    font-size: 19px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    line-height: 23px;
+    padding: 0 30px 0;
+}
     }
 
  /* Small Screen Stylings */
@@ -278,7 +377,7 @@ footer {
             padding: 10px 20px;
             font-size: 27px;
         }
-
+        
         .WWSImages {
             flex-direction: column;
             padding: 10px;
@@ -312,5 +411,29 @@ footer {
         header a{
             font-size: 10px;
         }
+
+.hero-box-contact {
+    width: 50%;
+    margin-top: 2%; 
+    margin-bottom: 120px;
+    
+}
+/* Specific styling and sizing for the header text within the hero box on the contacts page. */
+.hero-box-contact .hero-heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: center;
+}
+
+/* Specific styling and sizing of primary body text  on the contacts page*/
+.hero-box-contact .hero-desc {
+    font-size: 10px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 0 30px 0;
+}
     }
 
