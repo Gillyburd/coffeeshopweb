@@ -250,6 +250,10 @@ header {
     border-radius: 20px;
 }
 
+.hero-map img{
+    width: 86%;
+    padding: 20px;}
+
 /* 6 blocks below establish two quote sizing and spacing. */
 
 .quotepair{
@@ -305,9 +309,6 @@ padding-left:30px;
     margin-top:300px
 }
 
-.quote-box h1{
-}
-
 
 /* Footer bar flex, spaceing, alignment and colour. */
 footer {
@@ -325,7 +326,7 @@ footer {
     }
        
 
-    /* Mobile Stylings */
+/* Mobile Stylings */
 
     @media (max-width: 1234px) {
         #hero{
@@ -415,7 +416,36 @@ footer {
     line-height: 23px;
     padding: 0 30px 0;
 }
-    }
+
+.hero-box-times {
+    width: 45%;
+    margin-top: 5%; 
+    /* background-color: #322c2b; */
+    display: inline-block;
+    background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37, 29, 29, 0.44));
+}
+
+.eventlist li{
+    font-size: 18px;
+}
+
+.quote-box{
+    width: 50%;
+    margin-top: 2%; 
+    margin-bottom: 120px;
+    padding-top: 70px;
+    border-radius: 20px
+}
+    .quotepair {
+         padding: 20px;
+}
+
+    .quotepair img {
+        max-width: 200px;
+        padding-bottom: 20px;
+}
+
+}
 
  /* Small Screen Stylings */
 
@@ -481,6 +511,26 @@ footer {
         header a{
             font-size: 10px;
         }
+
+        .eventlist li{
+    font-size: 13px;
+}
+
+.quote-box{
+    width: 80%;
+    margin-top: 2%; 
+    margin-bottom: 120px;
+    padding-top: 70px;
+    border-radius: 20px
+}
+    .quotepair {
+         padding: 20px;
+}
+
+    .quotepair img {
+        max-width: 200px;
+        padding-bottom: 20px;
+}
 
 .hero-box-contact {
     width: 50%;
